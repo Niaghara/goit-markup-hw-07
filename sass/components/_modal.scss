@@ -58,12 +58,11 @@
 .close-modal {
   fill: #000000;
   transition: fill 250ms var(--timing-function);
-}
 
-.modal-btn:hover .close-modal {
+.modal-btn:hover & {
   fill: var(--accent-color);
 }
-
+}
 .modal-header {
   display: block;
   text-align: center;
@@ -109,7 +108,12 @@
   outline-offset: -1px;
 
   transition: outline 250ms var(--accent-color);
+
+  &:focus {
+  outline: 1px solid var(--accent-color);
 }
+}
+
 
 .modal-form__icon {
   position: absolute;
@@ -118,14 +122,11 @@
   transform: translateY(-50%);
 
   transition: fill 250ms var(--accent-color);
-}
 
-.modal-form__field:focus {
-  outline: 1px solid var(--accent-color);
-}
 
-.modal-form__field:focus + .modal-form__icon {
+.modal-form__field:focus + & {
   fill: var(--accent-color);
+}
 }
 
 .modal-form__message {
@@ -148,9 +149,8 @@
   letter-spacing: 0.01em;
 
   color: var(--primary-text-color);
-}
 
-.modal-form__message::placeholder {
+&::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -161,8 +161,9 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form__message:focus {
+&:focus {
   outline: 1px solid var(--accent-color);
+}
 }
 
 .modal-form-agreement {

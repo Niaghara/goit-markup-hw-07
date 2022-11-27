@@ -19,7 +19,6 @@
 }
 
 .hero .hero__title {
-
   box-sizing: content-box;
   width: 696px;
   font-weight: 900;
@@ -30,13 +29,7 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
 
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-}
-
-.btn__order {
-  min-width: 216px;
-  min-height: 50px;
 }

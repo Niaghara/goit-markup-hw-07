@@ -74,16 +74,17 @@
 .projects__card {
   background: var(--primary-white-color);
   min-width: 370px;
-}
 
-.projects__card:nth-child(3n) {
+  &:nth-child(3n) {
   margin-right: 0;
 }
+}
+
 .projects__link {
   text-decoration: none;
 }
 
-.projects-thumb {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }

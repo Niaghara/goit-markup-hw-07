@@ -9,6 +9,10 @@
   align-items: baseline;
   gap: 70px;
 }
+.footer-list {
+  display: block;
+  margin-top: 30px;
+}
 
 .footer-list__location {
   font-style: normal;
@@ -31,18 +35,14 @@
 
 .footer-list__address {
   display: block;
-}
 
-.footer-list {
-  display: block;
-  margin-top: 30px;
-}
-
-.footer-list__address:not(:last-child) {
+&:not(:last-child) {
   margin-bottom: 9px;
 }
+}
 
-.footer-social-title,
+
+.footer-socials-title,
 .signpost-form-title {
   font-weight: 700;
   font-size: 14px;
@@ -78,14 +78,14 @@ footer-socials__icon {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
 
-.form-email:placeholder-shown {
+
+&:placeholder-shown {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+}
 
