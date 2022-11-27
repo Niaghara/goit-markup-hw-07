@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -71,14 +72,14 @@
       <section class="hero overlay">
         <div class="container container-hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button hero__order" data-modal-open>
+          <button type="button" class="button btn__order" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
 
       <!--Advantages-->
-      <section class="section section-advantages">
+      <section class="section-advantages">
         <div class="container advantages-container">
           <h2 hidden>Наші переваги</h2>
           <ul class="advantages__list list card-set">
@@ -134,7 +135,7 @@
       </section>
 
       <!--Works-->
-      <section class="section section-works">
+      <section class="section-works">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="works list card-set">
@@ -175,7 +176,7 @@
         </div>
       </section>
       <!--Team-->
-      <section class="section section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list card-set">
@@ -452,7 +453,7 @@
       </section>
 
       <!--Clients-->
-      <section class="section section-clients">
+      <section class="section-clients">
         <div class="container container-clients">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients list card-set">
@@ -529,50 +530,50 @@
           <ul class="socials list">
             <li class="socials__item">
               <a
-                class="socials__link link socials__link-footer"
+                class="socials__link link footer-socials__link"
                 href="htpps://instagram.com"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon icon-footer" width="20" height="20">
+                <svg class="socials__icon footer-socials__icon" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#instagram"
                   ></use></svg></a>
             </li>
             <li class="socials__item">
               <a
-                class="socials__link link socials__link-footer"
+                class="socials__link link footer-socials__link"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Twitter"
               >
-                <svg class="socials__icon icon-footer" width="20" height="20">
+                <svg class="socials__icon footer-socials__icon" width="20" height="20">
                   <use href="./images/icons/symbol-defs.svg#twitter"></use></svg></a>
             </li>
             <li class="socials__item">
               <a
-                class="socials__link link socials__link-footer"
+                class="socials__link link footer-socials__link"
                 href="htpps://facebook.com"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon icon-footer" width="20" height="20">
+                <svg class="socials__icon footer-socials__icon" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#facebook"
                   ></use></svg></a>
             </li>
             <li class="socials__item">
               <a
-                class="socials__link link socials__link-footer"
+                class="socials__link link footer-socials__link"
                 href="htpps://linkedin.com"
                 target="_blank"
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon icon-footer" width="20" height="20">
+                <svg class="socials__icon footer-socials__icon" width="20" height="20">
                   <use
                     href="./images/icons/symbol-defs.svg#linkedin"
                   ></use></svg></a>
@@ -597,9 +598,9 @@
                 required
               />
               <label for="email" class="label-footer-email"></label>
-              <button class="button-signpost-form" type="submit">
+              <button class="button button__signpost" type="submit">
                 Підписатися
-                <svg class="icon-send-footer" width="18px" height="18px">
+                <svg class="button__sendicon" width="18px" height="18px">
                   <use
                     href="./images/icons/symbol-defs.svg#icon-send-footer"
                   ></use>
@@ -623,11 +624,11 @@
           >Залиште свої дані, ми вам передзвонимо</strong
         >
         <form class="modal-form" name="modal_form">
-          <div class="modal-form-group" role="group">
-            <label class="modal-form-label" for="user_name">Ім'я</label>
-            <div class="modal-form-wrapper">
+          <div class="modal-form__group" role="group">
+            <label class="modal-form__label" for="user_name">Ім'я</label>
+            <div class="modal-form__wrapper">
               <input
-                class="modal-form-field"
+                class="modal-form__field"
                 type="text"
                 name="user_name"
                 id="user_name"
@@ -635,16 +636,16 @@
                 required
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18px" height="18px">
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use
                   href="./images/icons/symbol-defs.svg#icon-modal-person"
                 ></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_phone">Телефон</label>
-            <div class="modal-form-wrapper">
+            <label class="modal-form__label" for="user_phone">Телефон</label>
+            <div class="modal-form__wrapper">
               <input
-                class="modal-form-field"
+                class="modal-form__field"
                 type="tel"
                 name="user_phone"
                 id="user_phone"
@@ -652,16 +653,16 @@
                 required
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18px" height="18px">
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use
                   href="./images/icons/symbol-defs.svg#icon-modal-phone"
                 ></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_mail">Пошта</label>
-            <div class="modal-form-wrapper">
+            <label class="modal-form__label" for="user_mail">Пошта</label>
+            <div class="modal-form__wrapper">
               <input
-                class="modal-form-field"
+                class="modal-form__field"
                 type="tel"
                 name="user_mail"
                 id="user_mail"
@@ -669,15 +670,15 @@
                 required
                 placeholder=" "
               />
-              <svg class="modal-form-icon" width="18px" height="18px">
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use
                   href="./images/icons/symbol-defs.svg#icon-modal-email"
                 ></use>
               </svg>
             </div>
-            <label class="modal-form-label" for="user_message">Коментар</label>
+            <label class="modal-form__label" for="user_message">Коментар</label>
             <textarea
-              class="modal-form-message"
+              class="modal-form__message"
               name="user_message"
               id="user_message"
               rows="7"
@@ -686,16 +687,16 @@
           </div>
           <div class="modal-form-agreement" role="group">
             <input
-              class="modal-form-checkbox"
+              class="modal-form__checkbox"
               type="checkbox"
               id="user_agreement"
             />
-            <label class="modal-form-agreement-desc" for="user_agreement">
+            <label class="modal-form-agreement__desc" for="user_agreement">
               Погоджуюся з розсилкою та приймаю
-              <a class="modal-form-agreement-link" href="">Умови договору</a>
+              <a class="modal-form-agreement__link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="button-modal-form" type="submit">Відправити</button>
+          <button class="button modal-form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
